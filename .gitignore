@@ -1,0 +1,9 @@
+*.wasm
+
+target/
+
+.DS_Store
+
+__pycache__
+
+.spin

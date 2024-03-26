@@ -1,0 +1,17 @@
+spin_manifest_version = 2
+
+[application]
+authors = [""]
+description = ""
+name = "python"
+version = "0.1.0"
+
+[[trigger.http]]
+route = "/..."
+component = "python"
+
+[component.python]
+source = "main.wasm"
+[component.python.build]
+command = "componentize-py -w spin-http componentize main -o main.wasm"
+watch = ["*.py", "requirements.txt"]
